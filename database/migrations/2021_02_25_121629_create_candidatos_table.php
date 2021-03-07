@@ -18,7 +18,6 @@ class CreateCandidatosTable extends Migration
             $table->string('CAN_NOME');
             $table->string('CAN_VICE');
             $table->string('CAN_IMAGEM');
-            $table->integer('CAN_NUMERO');
             $table->timestamps();
         });
     }
@@ -30,6 +29,6 @@ class CreateCandidatosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('candidatos');
+        Schema::dropIfExists('TB_CANDIDATOS');
     }
 }

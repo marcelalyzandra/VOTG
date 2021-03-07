@@ -23,7 +23,7 @@
           <h3 style="font-weight: bold;">Seu voto foi <span style="color:yellow;">Confirmado</span></h3>
           <h4>Aguarde o resultado</h4>
         </div>
-      @elseif (!$candidato->CAN_VICE) <!-- Verifica se existe não existe candidatos -->
+      @elseif ($candidato == null) <!-- Verifica se existe não existe candidatos -->
         <div class="container">
           <br><br><br><br><br>
           <h3 style="font-weight: bold;"> A votação <span style="color:yellow;">ainda</span></h3>

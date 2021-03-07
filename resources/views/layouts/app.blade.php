@@ -37,6 +37,9 @@
       #logomain {
         max-width: 500px;
       }
+      #logomaindehm{
+        max-width: 30px;
+      }
       #vencedor {
         max-width: 400px;
       }
@@ -131,7 +134,7 @@
             </li>
             <li>
               <a href="http://blog.creative-tim.com">
-                <img src="{{ asset('img/logomaindehm.png') }}" class="invision-logo"/>
+                <img src="{{ asset('img/logomaindehm.png') }}" class="invision-logo" id="logomaindehm"/>
               </a>
             </li>
           </ul>

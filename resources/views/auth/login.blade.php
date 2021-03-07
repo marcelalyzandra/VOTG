@@ -14,9 +14,8 @@
                 @csrf
                 <div class="card-header text-center">
                     <div class="logo-container">
-                        <img src="C:\Users\Eduardo\Downloads\Template\ark\logomain.png" alt="" id="logomain">
+                        <img src="{{ asset('img\logomain.png') }}" alt="" id="logomain">
                     </div>
-                     <p><h3>Login</h3></p>
                 </div>
               <div class="card-body">
                 <div class="input-group no-border input-lg">
@@ -25,8 +24,10 @@
                             <i class="now-ui-icons users_circle-08"></i>
                         </span>
                     </div>
-                    <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
-                    @error('email')
+                    <input id="matricula" type="text" class="form-control @error('matricula') is-invalid @enderror" 
+                    name="matricula" value="{{ old('matricula') }}" required autocomplete="matricula" 
+                    autofocus placeholder="Matricula">
+                    @error('matricula')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
                             </span>
@@ -38,7 +39,8 @@
                         <i class="now-ui-icons ui-1_lock-circle-open"></i>
                         </span>
                     </div>
-                    <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+                    <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" 
+                    name="password" required autocomplete="current-password" placeholder="Senha">
 
                     @error('password')
                         <span class="invalid-feedback" role="alert">
@@ -47,11 +49,7 @@
                     @enderror
                     
                 </div>
-                @if (Route::has('password.request'))
-                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                        {{ __('Forgot Your Password?') }}
-                    </a>
-                @endif
+                
               </div>
               <div class="card-footer text-center">
                 <button type="submit" class="btn btn-primary btn-round btn-lg btn-block">

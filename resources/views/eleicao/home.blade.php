@@ -27,7 +27,7 @@
                 </div>
                 <h6 class="category category-absolute">Designed by
                     <a href="http://invisionapp.com/" target="_blank">
-                        <img src="{{ asset('img/logomaindehm.png') }}" class="invision-logo" />
+                        <img src="{{ asset('img/logomaindehm.png') }}" class="invision-logo" id="logomaindehm"/>
                     </a>
                 </h6>
               @else
@@ -38,7 +38,7 @@
                 </div>
                 <h6 class="category category-absolute">Designed by
                     <a href="http://invisionapp.com/" target="_blank">
-                        <img src="{{ asset('img/logomaindehm.png') }}" class="invision-logo" />
+                        <img src="{{ asset('img/logomaindehm.png') }}" class="invision-logo" id="logomaindehm"/>
                     </a>
                 </h6>
               @endguest
@@ -46,7 +46,7 @@
         </div>
     </div>
     @if(strtotime($dataAtual) > strtotime($data))
-      @if($arrayCandidatos[0]->CAN_NOME) <!-- Verifica se existe candidatos -->
+      @if($contagem == 1) <!-- Verifica se existe candidatos -->
         <div class="main">
           <div class="card text-center">
             <div class="card-header mt-2">
@@ -59,28 +59,8 @@
               <h4 class="card-title" id="letras">Presidente: {{ $arrayCandidatos[0]->CAN_NOME }}</h4>
               <p class="card-text" id="letras">Vice: {{ $arrayCandidatos[0]->CAN_VICE }}</p>
               <p class="card-text" id="letras">Número de votos: {{ $collection[0]['total']  }}</p>
-              <p class="category" id="letras">Resultados gerais</p>
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th>Colocação</th>
-                    <th>Presidente</th>
-                    <th>Vice</th>
-                    <th>Votos</th>
-                    </tr>
-                </thead>
-                <tbody>
-
-                @foreach($arrayCandidatos as $candidato)
-                  <tr>
-                    <td class="text-center">{{ $contagem = $contagem+1 }}</td>
-                    <td>{{ $candidato['CAN_NOME'] }}</td>
-                    <td>{{ $candidato['CAN_VICE'] }}</td>
-                    <td>{{ $collection[$contagem-1]['total'] }}</td>
-                  </tr>
-                @endforeach
-                </tbody>
-              </table>
+              <p class="card-text" id="letras">Porcentagem dos votos: {{ $collection[0]['total']/$totalV*100  }}%</p>
+              
             </div>
             <div class="card-footer text-muted mb-2">
               Votação realizada em {{ $data }}

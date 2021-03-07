@@ -27,7 +27,7 @@
                 </div>
                 <h6 class="category category-absolute">Designed by
                     <a href="http://invisionapp.com/" target="_blank">
-                        <img src="<?php echo e(asset('img/logomaindehm.png')); ?>" class="invision-logo" />
+                        <img src="<?php echo e(asset('img/logomaindehm.png')); ?>" class="invision-logo" id="logomaindehm"/>
                     </a>
                 </h6>
               <?php else: ?>
@@ -38,7 +38,7 @@
                 </div>
                 <h6 class="category category-absolute">Designed by
                     <a href="http://invisionapp.com/" target="_blank">
-                        <img src="<?php echo e(asset('img/logomaindehm.png')); ?>" class="invision-logo" />
+                        <img src="<?php echo e(asset('img/logomaindehm.png')); ?>" class="invision-logo" id="logomaindehm"/>
                     </a>
                 </h6>
               <?php endif; ?>
@@ -46,7 +46,7 @@
         </div>
     </div>
     <?php if(strtotime($dataAtual) > strtotime($data)): ?>
-      <?php if($arrayCandidatos[0]->CAN_NOME): ?> <!-- Verifica se existe candidatos -->
+      <?php if($contagem == 1): ?> <!-- Verifica se existe candidatos -->
         <div class="main">
           <div class="card text-center">
             <div class="card-header mt-2">
@@ -59,28 +59,8 @@
               <h4 class="card-title" id="letras">Presidente: <?php echo e($arrayCandidatos[0]->CAN_NOME); ?></h4>
               <p class="card-text" id="letras">Vice: <?php echo e($arrayCandidatos[0]->CAN_VICE); ?></p>
               <p class="card-text" id="letras">Número de votos: <?php echo e($collection[0]['total']); ?></p>
-              <p class="category" id="letras">Resultados gerais</p>
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th>Colocação</th>
-                    <th>Presidente</th>
-                    <th>Vice</th>
-                    <th>Votos</th>
-                    </tr>
-                </thead>
-                <tbody>
-
-                <?php $__currentLoopData = $arrayCandidatos; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $candidato): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                  <tr>
-                    <td class="text-center"><?php echo e($contagem = $contagem+1); ?></td>
-                    <td><?php echo e($candidato['CAN_NOME']); ?></td>
-                    <td><?php echo e($candidato['CAN_VICE']); ?></td>
-                    <td><?php echo e($collection[$contagem-1]['total']); ?></td>
-                  </tr>
-                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                </tbody>
-              </table>
+              <p class="card-text" id="letras">Porcentagem dos votos: <?php echo e($collection[0]['total']/$totalV*100); ?>%</p>
+              
             </div>
             <div class="card-footer text-muted mb-2">
               Votação realizada em <?php echo e($data); ?>
