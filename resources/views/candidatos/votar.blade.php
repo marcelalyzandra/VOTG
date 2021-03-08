@@ -9,7 +9,7 @@
   <div class="page-header clear-filter" filter-color="orange">
     <div class="page-header-image" style="background-image:url({{ asset('img/header.jpg') }})">
     </div>
-    <div class="content">
+    <div class="content" style="margin-top: 10%;">
 
       @if(strtotime($dataAtual) != strtotime($data))
         <div class="container">
@@ -36,11 +36,12 @@
           <br>
           <div class="col-md-4 ml-auto mr-auto">
             <div class="card card-login card-plain"> 
-              <div class="card">
-                  <img class="card-img-top" src="{{ url('storage/candidatos/'.$candidato->CAN_IMAGEM) }}" alt="" id="logomain" id="imgcandidato">
-                  <h4 class="card-title" style="color:black; margin-bottom: 0em; margin-top: 0px; font-weight: bold;"> {{ $candidato->CAN_NOME }} Presidente</h4>
-                  <h4  style="color:black; margin-bottom: 0em; margin-top: 0px;"> {{ $candidato->CAN_VICE }} Vice </h4>
-                  <h4  style="color:#1C7943; margin-bottom: 0em; margin-top: 0px; font-weight: bold;">30</h4>
+              <div>
+                  <img class="card-img-top" src="{{ url('storage/candidatos/'.$candidato->CAN_IMAGEM) }}" alt="" id="logomain" id="imgcandidato" style="max-width: 150px;max-height: 150px;">
+                  <h4 class="card-title" style="color:white; margin-bottom: 0em; margin-top: 0px; font-weight: bold;"> {{ $candidato->CAN_NOME }} Presidente</h4>
+                  <h4  style="color:white; margin-bottom: 0em; margin-top: 0px;"> {{ $candidato->CAN_VICE }} Vice </h4>
+                  <br>
+                  
       
               </div>
               @if ($msg)

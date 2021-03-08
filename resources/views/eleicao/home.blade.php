@@ -34,7 +34,9 @@
                 <div class="content-center brand">
                     <img class="n-logo" src="{{ asset('img/logomain.png') }}" alt="" id= "logomain">
                     <h1 class="h1-seo">Ainda não votou?</h1>
-                    <h3><a href="{{ route('candidatos.votar') }}">Clique aqui</a> para votar</h3>
+                    <h3 style="margin-bottom: 0px;"><a href="{{ route('candidatos.votar') }}">Clique aqui</a> para votar</h3>
+                    <h6 style="margin-bottom: 5px; margin-top: 10px;">OU</h6>
+                    <h3 style="margin-top: 0px;">Role a página para mais informações</h3>
                 </div>
                 <h6 class="category category-absolute">Designed by
                     <a href="http://invisionapp.com/" target="_blank">

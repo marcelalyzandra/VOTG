@@ -5,16 +5,14 @@
 @section('content')
 <div class="page-header clear-filter" filter-color="orange">
     <div class="page-header-image" style="background-image:url({{ asset('img/header.jpg') }})"></div>
-    <div class="content">
+    <div class="content" style="margin-top: 10em;">
       <div class="container">
         <div class="col-md-4 ml-auto mr-auto">
           <div class="card card-login card-plain">
             <form class="form" method="POST" action="{{ route('register') }}">
                 @csrf
                 <div class="card-header text-center">
-                    <div class="logo-container">
-                    <img src="{{ asset('img\logomain.png') }}" alt="" id="logomain">
-                    </div>
+                    
                     <p><h3>Cadastro</h3></p>
                 </div>
                 <div class="card-body">

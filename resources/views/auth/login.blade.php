@@ -6,7 +6,7 @@
 @section('content')
 <div class="page-header clear-filter" filter-color="orange">
     <div class="page-header-image" style="background-image:url({{ asset('img/header.jpg') }})"></div>
-    <div class="content">
+    <div class="content" style="margin-top: 10%;">
       <div class="container">
         <div class="col-md-4 ml-auto mr-auto">
           <div class="card card-login card-plain">
