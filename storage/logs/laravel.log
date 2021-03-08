@@ -14965,3 +14965,43 @@ esbot\\carbon\\src\\Carbon\\Traits\\Converter.php(189): Carbon\\Carbon::getTimeF
 #50 C:\\xampp\\htdocs\\votG\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #51 {main}
 "} 
+[2021-03-08 22:10:26] local.ERROR: Command "config:" is ambiguous.
+Did you mean one of these?
+    config:cache Create a cache file for faster configuration loading
+    config:clear Remove the configuration cache file. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"config:\" is ambiguous.
+Did you mean one of these?
+    config:cache Create a cache file for faster configuration loading
+    config:clear Remove the configuration cache file. at C:\\xampp\\htdocs\\votG\\vendor\\symfony\\console\\Application.php:716)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\votG\\vendor\\symfony\\console\\Application.php(254): Symfony\\Component\\Console\\Application->find('config:')
+#1 C:\\xampp\\htdocs\\votG\\vendor\\symfony\\console\\Application.php(166): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\xampp\\htdocs\\votG\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\xampp\\htdocs\\votG\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\xampp\\htdocs\\votG\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2021-03-08 22:10:45] local.ERROR: Use of undefined constant db_voteg - assumed 'db_voteg' (this will throw an Error in a future version of PHP) {"exception":"[object] (ErrorException(code: 0): Use of undefined constant db_voteg - assumed 'db_voteg' (this will throw an Error in a future version of PHP) at C:\\xampp\\htdocs\\votG\\config\\database.php:50)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\votG\\config\\database.php(50): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Use of undefine...', 'C:\\\\xampp\\\\htdocs...', 50, Array)
+#1 C:\\xampp\\htdocs\\votG\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(72): require('C:\\\\xampp\\\\htdocs...')
+#2 C:\\xampp\\htdocs\\votG\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#3 C:\\xampp\\htdocs\\votG\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(237): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#4 C:\\xampp\\htdocs\\votG\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#5 C:\\xampp\\htdocs\\votG\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\ConfigCacheCommand.php(88): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#6 C:\\xampp\\htdocs\\votG\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\ConfigCacheCommand.php(58): Illuminate\\Foundation\\Console\\ConfigCacheCommand->getFreshConfiguration()
+#7 C:\\xampp\\htdocs\\votG\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(36): Illuminate\\Foundation\\Console\\ConfigCacheCommand->handle()
+#8 C:\\xampp\\htdocs\\votG\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#9 C:\\xampp\\htdocs\\votG\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#10 C:\\xampp\\htdocs\\votG\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#11 C:\\xampp\\htdocs\\votG\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(610): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#12 C:\\xampp\\htdocs\\votG\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(136): Illuminate\\Container\\Container->call(Array)
+#13 C:\\xampp\\htdocs\\votG\\vendor\\symfony\\console\\Command\\Command.php(256): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#14 C:\\xampp\\htdocs\\votG\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(121): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#15 C:\\xampp\\htdocs\\votG\\vendor\\symfony\\console\\Application.php(971): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#16 C:\\xampp\\htdocs\\votG\\vendor\\symfony\\console\\Application.php(290): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Foundation\\Console\\ConfigCacheCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#17 C:\\xampp\\htdocs\\votG\\vendor\\symfony\\console\\Application.php(166): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#18 C:\\xampp\\htdocs\\votG\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#19 C:\\xampp\\htdocs\\votG\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#20 C:\\xampp\\htdocs\\votG\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 {main}
+"} 
