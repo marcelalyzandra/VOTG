@@ -40,7 +40,7 @@ $ php artisan migrate
 
 ---
 
-## Contruido com
+## Construido com
 
 * [Laravel](https://laravel.com/) - o framework web usado
 * [MySQL](https://www.mysql.com/) - o banco de dados usado
