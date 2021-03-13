@@ -37,7 +37,7 @@ $ php artisan migrate
 ```
 
 ---
-# ✅ Features
+## Features
 - Os usuários podem:
    - [x] Votar
    - [x] Ver os resultados
