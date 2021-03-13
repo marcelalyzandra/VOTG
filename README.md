@@ -6,16 +6,13 @@
 
 O VOTG é um sistema para a votação do grêmio estudantil do IFRN Campus Caicó. Como as votações ainda estão sendo feitas em cedulas, esse sistema foi feito com intuito tirar as várias dificuldades que existem nesse modo de votação, criando-se assim um software para agilizar esse processo de votação e também da apuração dos resultados. 
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 
-### Pré-requisitos
+## Pré-requisitos
 
  Para executar esse projeto é necessario ter instalado na sua maquina o [PHP 7](https://www.php.net/downloads) e o [Xampp](https://www.apachefriends.org/pt_br/index.html).
 
-#### Executando o sistema
+### Executando o sistema
 
 ```bash
 
