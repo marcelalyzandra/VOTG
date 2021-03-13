@@ -24,8 +24,6 @@ These instructions will get you a copy of the project up and running on your loc
 #acesse a pasta do projeto com o terminal/cmd e de o comando:
 $ composer install
  
-#crie o arquivo .env com o conteúdo do arquivvo .env.exemple na pasta raiz do projeto e configure o banco de dados
-
 #gere a api_key
 $ php artisan key:generate
 
@@ -39,6 +37,14 @@ $ php artisan migrate
 ```
 
 ---
+# ✅ Features
+- Os usuários podem:
+   - [x] Votar
+   - [x] Ver os resultados
+- os não usuários podem:
+   - [x] Ver os resultado
+   
+
 
 ## Construido com
 
@@ -48,16 +54,12 @@ $ php artisan migrate
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* [**Hernandes Matheus**](https://github.com/Hernandes-Silva) - *Desenvolvedor*
+* [**Daniel Lucas**](https://github.com/Hernandes-Silva) - *Analista*
+* [**Eduardo Alencar**](https://github.com/Hernandes-Silva) - *Designer*
+* [**Marcela Lyzandra**](https://github.com/Hernandes-Silva) - *Gerência*
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE.md](LICENSE.md) para detalhes
 
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
