@@ -20,7 +20,7 @@ O VOTG é um sistema para a votação do grêmio estudantil do IFRN Campus Caic�
 
 ```bash
 
-# coloque o projeto na pasta htdocs do Xampp. Além disso lembre-se de colocar as dependencias de um projeto laravel como por exemplo a pasta vendor
+# coloque o projeto na pasta htdocs do Xampp.
 
 #acesse a pasta do projeto com o terminal/cmd e de o comando:
 $ composer install
