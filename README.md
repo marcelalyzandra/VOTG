@@ -58,7 +58,7 @@ $ php artisan migrate
 * [**Hernandes Matheus**](https://github.com/Hernandes-Silva) - *Desenvolvedor*
 * [**Daniel Lucas**](https://github.com/Hernandes-Silva) - *Analista*
 * [**Eduardo Alencar**](https://github.com/Hernandes-Silva) - *Designer*
-* [**Marcela Lyzandra**](https://github.com/Hernandes-Silva) - *Gerência*
+* [**Marcela Lyzandra**](https://github.com/marcelalyzandra) - *Gerência*
 
 ## License
 
