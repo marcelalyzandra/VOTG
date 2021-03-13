@@ -1,5 +1,9 @@
 <p align="center">
-    <img src="https://github.com/Hernandes-Silva/VOTG/blob/main/imgsGit/gif-votg.gif">
+    <img src="https://github.com/Hernandes-Silva/VOTG/blob/main/imgsGit/gif-votg.gif" width='80%'>
+    <img src="https://github.com/Hernandes-Silva/VOTG/blob/main/imgsGit/git-votg2.gif" width="80%">
+    
+</p>
+<p align="center">
 </p>
 
 # VOTG
