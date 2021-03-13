@@ -26,7 +26,7 @@ class CandidatoController extends Controller
     public function index(){
         $dataA = Carbon::now()->toDateTimeString();
         $dataAtual = date('d-m-Y', strtotime($dataA));
-        $data = date('d-m-Y', strtotime('2021-03-11'));#data que vai acontecer a vontação
+        $data = date('d-m-Y', strtotime('2021-03-13'));#data que vai acontecer a vontação
         $votUse = false;#variavel que vai dizer se o usuario votou, false = não votou
         $filter = request('filter');
         $query = Candidato::query();
@@ -67,7 +67,7 @@ class CandidatoController extends Controller
     public function home(){
         $dataA = Carbon::now()->toDateTimeString();
         $dataAtual = date('d-m-Y', strtotime($dataA));
-        $data = date('d-m-Y', strtotime('2021-03-11'));#data que vai acontecer a vontação
+        $data = date('d-m-Y', strtotime('2021-03-13'));#data que vai acontecer a vontação
             #$collection = votacao::groupBy('VOT_CAN_CODIGO')
             #->selectRaw('count(*) as total, VOT_CAN_CODIGO')
             #->get();
